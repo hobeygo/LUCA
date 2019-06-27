@@ -1,14 +1,16 @@
 {"namespace": "example.avro",
-    "type": "record",
-    "name": "event",
-    "fields": [
+ "type": "record",
+ "name": "entry",
+ "fields": [
      {"name": "PAR_PROCESS_DATE", "type": "string"},
      {"name": "PAR_SOURCE",  "type": "string"},
+     {"name": "ACT_CODE",  "type": "int"},
      {"name": "AMOUNT", "type": "float"},
      {"name": "AMOUNT_CCY", "type": "string"},
      {"name": "BCE_AMOUNT", "type": "float"},
      {"name": "BCE_AMOUNT_CCY", "type": "string"},
      {"name": "CONTRACT_ID", "type": "string"},
+     {"name": "DC_FLAG", "type": "string"},
      {"name": "EVENT_CODE", "type": "int"},
      {"name": "E_ATE_CODE", "type": "string"},
      {"name": "E_PDT_CODE", "type": "string"},
@@ -25,7 +27,6 @@
      {"name": "E_FV_OPTION", "type": "string"},
      {"name": "E_ACT_STD", "type": "string"},
      {"name": "BANK_ACCOUNT_TYPE", "type": "string"}
-    ]
-   }
-   
-   
+ ]
+}
+

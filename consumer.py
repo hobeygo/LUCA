@@ -1,6 +1,7 @@
 import io
 import avro.schema
 import avro.io
+import json
 from kafka import KafkaConsumer
 
 # To consume messages
@@ -15,5 +16,8 @@ for msg in CONSUMER:
     bytes_reader = io.BytesIO(msg.value)
     decoder = avro.io.BinaryDecoder(bytes_reader)
     reader = avro.io.DatumReader(SCHEMA)
-    user1 = reader.read(decoder)
-    print(user1)
+    acc_event = reader.read(decoder)  
+    #print(acc_event)
+    #loaded_json = json.loads(acc_event)
+    #Getting a particular field out of the row event data
+    print(acc_event["PAR_PROCESS_DATE"])
