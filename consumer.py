@@ -20,4 +20,5 @@ for msg in CONSUMER:
     #print(acc_event)
     #loaded_json = json.loads(acc_event)
     #Getting a particular field out of the row event data
-    print(acc_event["PAR_PROCESS_DATE"])
+    print(acc_event["EVENT_CODE"])
+    print(acc_event["BANK_ACCOUNT_TYPE"])

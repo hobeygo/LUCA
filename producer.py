@@ -20,7 +20,7 @@ SCHEMA_PATH = "CASA_events.avsc"
 SCHEMA = avro.schema.Parse(open(SCHEMA_PATH).read())
 
 #read excel file
-df = pd.read_excel('CASA_entries_ex.xlsx', sheet_name='TABLE Structure')
+df = pd.read_excel('CASA_entries_new.xlsx', sheet_name='TABLE Structure')
 print(df.loc[0].to_json())
 
 
