@@ -1,9 +1,30 @@
 {"namespace": "example.avro",
  "type": "record",
- "name": "User",
+ "name": "event",
  "fields": [
-     {"name": "name", "type": "string"},
-     {"name": "favorite_number",  "type": ["int", "null"]},
-     {"name": "favorite_color", "type": ["string", "null"]}
+     {"name": "PAR_PROCESS_DATE", "type": "string"},
+     {"name": "PAR_SOURCE",  "type": "string"},
+     {"name": "AMOUNT", "type": "double"},
+     {"name": "AMOUNT_CCY", "type": "string"},
+     {"name": "BCE_AMOUNT", "type": "float"},
+     {"name": "BCE_AMOUNT_CCY", "type": "string"},
+     {"name": "CONTRACT_ID", "type": "string"},
+     {"name": "EVENT_CODE", "type": "string"},
+     {"name": "E_ATE_CODE", "type": "string"},
+     {"name": "E_PDY_CODE", "type": "string"},
+     {"name": "E_RLN_PGP_COUNTRY_ISO_CODE", "type": "string"},
+     {"name": "E_RLN_PGP_ZONE_SECTOR", "type": "string"},
+     {"name": "PCR_CODE", "type": "string"},
+     {"name": "PC_MONTH", "type": "string"},
+     {"name": "ALT_CONTRACT_REF", "type": "string"},
+     {"name": "E_SPR_CODE", "type": "string"},
+     {"name": "ACCOUNT_CLASSIFICATION", "type": "string"},
+     {"name": "E_FDK_IMT_NAME", "type": "string"},
+     {"name": "E_FDK_MT", "type": "string"},
+     {"name": "E_RCL_IND", "type": "boolean"},
+     {"name": "E_FV_OPTION", "type": "boolean"},
+     {"name": "E_ACT_STD", "type": "string"},
+     {"name": "BANK_ACCOUNT_TYPE", "type": "string"}
  ]
 }
+
