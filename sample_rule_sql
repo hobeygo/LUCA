@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `rule_output`;
 CREATE TABLE `rule_output` (
   `rule_id` int(11) NOT NULL,
   `account_code` int(11) NOT NULL,
-  `D/C` varchar(2) NOT NULL
+  `D_C` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `rule_output` (`rule_id`, `account_code`, `D/C`) VALUES
