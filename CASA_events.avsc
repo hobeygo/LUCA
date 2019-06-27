@@ -21,8 +21,8 @@
      {"name": "ACCOUNT_CLASSIFICATION", "type": "string"},
      {"name": "E_FDK_IMT_NAME", "type": "string"},
      {"name": "E_FDK_MT", "type": "string"},
-     {"name": "E_RCL_IND", "type": "boolean"},
-     {"name": "E_FV_OPTION", "type": "boolean"},
+     {"name": "E_RCL_IND", "type": "string"},
+     {"name": "E_FV_OPTION", "type": "string"},
      {"name": "E_ACT_STD", "type": "string"},
      {"name": "BANK_ACCOUNT_TYPE", "type": "string"}
  ]
