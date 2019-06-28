@@ -17,19 +17,28 @@ CREATE TABLE `rule_list` (
 
 INSERT INTO `rule_list` (`rule_id`, `event_code`, `bank_account_type`, `condition_1`, `condition_2`) VALUES
 (1,	5500,	'LOROA',	'1=1',	''),
-(2,	5500,	'ISAAC',	'1=1',	'');
+(2,	5500,	'ISAAC',	'1=1',	''),
+(3,	5501,	'',	'1=1',	''),
+(4,	5502,	'ISMIR',	'1=1',	''),
+(5,	5502,	'NOSTRO',	'1=1',	'');
 
 DROP TABLE IF EXISTS `rule_output`;
 CREATE TABLE `rule_output` (
   `rule_id` int(11) NOT NULL,
   `account_code` int(11) NOT NULL,
-  `D_C` varchar(2) NOT NULL
+  `dc` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `rule_output` (`rule_id`, `account_code`, `D_C`) VALUES
+INSERT INTO `rule_output` (`rule_id`, `account_code`, `dc`) VALUES
 (1,	95748,	'Cr'),
 (1,	81366,	'Dt'),
 (2,	95748,	'Cr'),
-(2,	81366,	'Dt');
+(2,	81366,	'Dt'),
+(3,	81066,	'Dt'),
+(3,	81366,	'Cr'),
+(4,	98322,	'Dt'),
+(4,	81066,	'Cr'),
+(5,	98322,	'Dt'),
+(5,	81066,	'Cr');
 
--- 2019-06-27 21:26:55
+-- 2019-06-28 02:37:27
